@@ -1,11 +1,19 @@
 Comandos:
     python manage.py runserver: Rodar o servidor
     python manage.py startapp {nome do projeto}: inicia um novo app
-    
+
 
 Path -> as rotas dentro do DJGANGO
     Dentro do Path deve se passar no minimo dois parametros
         1. a rota
         2. uma function view, que será passado um request.
            e dentro da view, ela vai retornar um response
+
+Include -> É uma função do django.urls, que faz com que
+consigamos aninhar as urls.
+Exemplo: path('', include('recipes.urls'))
+O include vai receber como parametro, o caminho da onde aonde as
+urls estão armazenadas e concatenará com a rota passada no path
+no caso, como está vazio, vai ser considerado /
+então, ficaria assim: dominio.com/{rota chamada do recipes.urls}
 
