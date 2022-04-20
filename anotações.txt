@@ -1,5 +1,11 @@
+Comandos:
+    python manage.py runserver: Rodar o servidor
+    python manage.py startapp {nome do projeto}: inicia um novo app
+    
+
 Path -> as rotas dentro do DJGANGO
     Dentro do Path deve se passar no minimo dois parametros
         1. a rota
         2. uma function view, que será passado um request.
            e dentro da view, ela vai retornar um response
+
